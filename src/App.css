@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: flex-start;
   padding: 20px;
+  box-sizing: border-box;
+  color: #000; /* Ensure default text color is black */
 }
 
 .App-logo {
@@ -43,8 +45,24 @@
   }
 }
 
+/* Improved mobile styles */
 @media (max-width: 600px) {
   .App {
     padding: 10px;
+    padding-bottom: 20px;
+    justify-content: space-between;
   }
+}
+
+/* Fix for iOS Safari height issue */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Remove tap highlighting on mobile */
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }

@@ -6,6 +6,8 @@
   margin: 0 auto;
   padding: 20px;
   font-family: 'Arial', sans-serif;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -48,4 +50,44 @@ h1 {
   text-align: center;
   font-size: 0.9rem;
   width: 100%;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+  .wordle-game {
+    padding: 10px;
+    padding-bottom: 20px;
+    max-width: 100%;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  
+  .date-display {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+  }
+  
+  .game-message {
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .error-message {
+    margin: 8px 0;
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Make sure we use the full viewport height properly */
+@media (max-height: 800px) {
+  .wordle-game {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+  }
 } 
