@@ -1,0 +1,51 @@
+.wordle-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.date-display {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.game-message {
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.success {
+  background-color: rgba(83, 141, 78, 0.2);
+  color: #538d4e;
+}
+
+.failure {
+  background-color: rgba(181, 59, 59, 0.2);
+  color: #b53b3b;
+}
+
+.error-message {
+  margin: 10px 0;
+  padding: 8px;
+  background-color: rgba(181, 59, 59, 0.2);
+  color: #b53b3b;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 100%;
+} 
